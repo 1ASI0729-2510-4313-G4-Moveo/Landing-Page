@@ -2641,3 +2641,255 @@ ol {
     display: block;
     margin-bottom: 15px;
 }
+
+/*======================================
+	Services CSS
+========================================*/
+.services {
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+}
+
+.services .section-title {
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services .section-title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services .section-title {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+    .services .upper-content {
+        padding-right: 100px;
+    }
+}
+
+.services .upper-content .lasthead {
+    font-size: 16px;
+    font-weight: 600;
+    color: #10BEAE;
+    margin-bottom: 15px;
+}
+
+.services .upper-content .title {
+    font-size: 28px;
+    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 21px 0 16px;
+}
+
+.services .upper-content p {
+    margin-top: 20px;
+}
+
+.services .upper-content .button {
+    margin-top: 40px;
+}
+
+.services .single-service {
+    min-height: 300px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 30px rgba(81, 94, 125, 0.082);
+    box-shadow: 0px 0px 30px rgba(81, 94, 125, 0.082);
+    padding: 40px 50px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.services .single-service:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    border-top-color: #10BEAE;
+    border-bottom-color: #10BEAE;
+}
+
+.services .single-service .main-icon {
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #10BEAE;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 27px;
+    text-align: center;
+    display: inline-block;
+}
+
+.services .single-service .text-title {
+    color: #081828;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.services .single-service p {
+    line-height: 26px;
+    font-size: 15px;
+}
+
+/*=============================
+	Pricing Table CSS
+===============================*/
+.pricing-table {
+    background-color: #F4F7FA;
+}
+
+.pricing-table .section-title {
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pricing-table .section-title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-table .section-title {
+        margin-bottom: 20px;
+    }
+}
+
+.pricing-table .single-table {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 50px 35px;
+    text-align: left;
+    z-index: 0;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-table .single-table .popular {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    color: #10BEAE;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pricing-table .single-table:hover {
+    -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
+}
+
+.pricing-table .single-table.middle .table-head .title {
+    border-color: #10BEAE;
+    color: #10BEAE;
+}
+
+.pricing-table .single-table .table-head .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #10BEAE;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.pricing-table .single-table .table-head .sub-title {
+    margin-bottom: 30px;
+}
+
+.pricing-table .single-table .table-head p {
+    font-weight: 400;
+}
+
+.pricing-table .single-table .table-head .price .amount {
+    font-size: 45px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    padding-left: 16px;
+}
+
+.pricing-table .single-table .table-head .price .amount .currency {
+    font-weight: 500;
+    color: #4f4f4f;
+    font-size: 17px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.pricing-table .single-table .table-head .price .amount .duration {
+    display: inline-block;
+    font-size: 14px;
+    color: #4f4f4f;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.pricing-table .single-table .table-list {
+    margin-top: 40px;
+}
+
+.pricing-table .single-table .button {
+    margin: 0;
+    margin-top: 50px;
+}
+
+.pricing-table .single-table .button .btn i {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.pricing-table .single-table .no-card {
+    display: block;
+    margin-top: 15px;
+}
+
+.pricing-table .single-table .table-content .table-list li {
+    font-size: 15px;
+    margin-bottom: 16px;
+    padding-left: 25px;
+    font-weight: 400;
+    color: #081828;
+    position: relative;
+}
+
+.pricing-table .single-table .table-content .table-list li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\ea5a";
+    font-family: lineIcons;
+    color: #68D585;
+    font-size: 15px;
+}
+
+.pricing-table .single-table .table-content .table-list li.disable {
+    color: #727272;
+}
+
+.pricing-table .single-table .table-content .table-list li.disable::before {
+    color: #727272;
+    content: "\ea87";
+}
