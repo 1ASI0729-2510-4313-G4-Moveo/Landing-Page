@@ -42,5 +42,30 @@
         navbarToggler.classList.toggle("active");
     });
 
+    
+    async function setLanguage(lang) {
+        const response = await fetch(`assets/languages/lang-${lang}.json`);
+        const translations = await response.json();
+
+        for (const key in translations) {
+            const element = document.getElementById(key);
+            if (element) {
+                if (element.tagName.toLowerCase() === 'input' || element.tagName.toLowerCase() === 'textarea') {
+                    element.placeholder = translations[key];
+                } else {
+                    element.innerText = translations[key];
+                }
+            }
+        }
+        localStorage.setItem("language", lang);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('language') || 'en';
+        setLanguage(savedLang);
+    });
+
+    window.setLanguage = setLanguage;
+
 
 })();
