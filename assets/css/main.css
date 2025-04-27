@@ -3746,4 +3746,34 @@ ol {
     .map-section .mapouter iframe {
         height: 300px;
     }
+
+}
+.language-floating {
+    position: fixed;
+    bottom: 90px; /* más arriba del scroll-top */
+    right: 20px;
+    background: #00bfa6; /* color principal de Moveo */
+    padding: 8px 12px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 8px;
+    z-index: 999;
+}
+
+.language-floating button {
+    background: white;
+    color: #00bfa6;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.language-floating button:hover {
+    background: #e9f5f8;
+    color: #007c91;
 }
