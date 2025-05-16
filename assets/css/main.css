@@ -2707,15 +2707,13 @@ ol {
     text-align: center;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    border: 3px solid transparent;
 }
 
 .services .single-service:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-    border-top-color: #10BEAE;
-    border-bottom-color: #10BEAE;
+    border-color: #10BEAE;
 }
 
 .services .single-service .main-icon {
