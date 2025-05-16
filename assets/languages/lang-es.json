@@ -1,8 +1,12 @@
 {
   "navItem1": "Inicio",
   "navItem2": "Acerca de",
+  "navSubItem21": "Sobre Nosotros",
+  "navSubItem22": "Equipo",
   "navItem3": "Suscripciones",
   "navItem4": "Clientes",
+  "navSubItem41": "Preguntas y Respuestas",
+  "navSubItem42": "Testimonios",
   "navItem5": "Contacto",
   "logIn": "Iniciar sesión",
 
@@ -12,7 +16,7 @@
   "heroButton": "Más información",
 
   "aboutUsIntro": "Acerca de nosotros",
-  "aboutUsTitle": "El equipo GPT4 presenta: MOVEO",
+  "aboutUsTitle": "El equipo GPT4 presenta:",
   "whoWeAreTitle": "¿Quiénes somos?",
   "whoWeAreText": "MOVEO es una startup universitaria dedicada a conectar trabajadores que necesitan transporte confiable con personas dispuestas a prestar sus vehículos de manera segura y asequible.",
   "missionTitle": "¿Cuál es nuestra misión?",
@@ -42,7 +46,7 @@
   "pricingDescription": "Registrarte en Moveo es completamente gratis. Puedes buscar autos cercanos, ver precios y elegir el que mejor se adapte a tu tiempo y necesidades.",
 
   "plan1Title": "Para arrendatarios de autos",
-  "plan1Price": "$0/mes",
+  "plan1Price": "/mes",
   "plan1Desc": "Cuenta gratuita",
   "plan1Feature1": "Registro y navegación",
   "plan1Feature2": "Tiempo de alquiler personalizado",
@@ -54,19 +58,32 @@
   "plan1Button": "Iniciar prueba gratuita",
 
   "plan2Title": "Premium",
-  "plan2Price": "$5/mes",
+  "plan2Price": "/mes",
   "plan2Desc": "Elementos Poderosos y Asombrosos",
+  "plan2Feature1": "Registro y navegación",
+  "plan2Feature2": "Tiempo de alquiler personalizado",
+  "plan2Feature3": "Acceso a autos cercanos",
+  "plan2Feature4": "Reservas anticipadas",
+  "plan2Feature5": "Descuentos en alquileres recurrentes",
+  "plan2Feature6": "Soporte prioritario",
+  "plan2Feature7": "Acceso preferencial a nuevos vehículos",
+  "plan2Button": "Iniciar prueba gratuita",
 
   "plan3Title": "Para proveedores de vehículos",
-  "plan3Price": "$15/mes",
+  "plan3Price": "/mes",
+  "plan3Popular": "Destacado",
   "plan3Desc": "Publicación gratuita de tu vehículo",
   "plan3Feature1": "Sin tarifas ocultas",
   "plan3Feature2": "Ingresos fáciles (20% del total pagado)",
-  "plan3Feature3": "Control total desde la app",
+  "plan3Feature3": "Control total desde la app:",
   "plan3Feature3_1": "Activar o desactivar disponibilidad en cualquier momento",
   "plan3Feature3_2": "Solicitar recuperación del vehículo cuando sea necesario",
   "plan3Feature3_3": "Rastrear el estado de tu auto y gestionar todo desde tu perfil",
   "plan3Button": "Iniciar prueba gratuita",
+
+  "noCard1": "Tarjeta de crédito no requerida",
+  "noCard2": "Tarjeta de crédito no requerida",
+  "noCard3": "Tarjeta de crédito no requerida",
 
   "introVideoTitle": "Próximamente",
   "introVideoSubtitle": "Mira nuestro video de introducción",
@@ -103,7 +120,7 @@
   "faq6Answer": "Sí, todos los autos en Moveo deben tener un seguro activo. Además, contamos con políticas de seguridad para proteger a ambas partes.",
 
   "contactTitle": "Contáctanos",
-  "contactDescription": "¿Tienes preguntas, sugerencias o quieres saber más sobre cómo funciona Moveo? Estamos aquí para ayudarte. 📩 Escríbenos y te responderemos lo antes posible. Tu movilidad, nuestra prioridad.",
+  "contactDescription": "¿Tienes preguntas, sugerencias o quieres saber más sobre cómo funciona Moveo? \nEstamos aquí para ayudarte. \n📩 Escríbenos y te responderemos lo antes posible. \nTu movilidad, nuestra prioridad.",
   "contactCallUs": "Llámanos",
   "contactEmailUs": "Envíanos un correo",
   "contactAddress": "Nuestra Dirección",
@@ -126,10 +143,11 @@
   "footerSupportItem2": "Documentación",
   "footerSupportItem3": "Guías",
   "footerSupportItem4": "Estado de la API",
+
   "footerFollowUsOn": "Síguenos en:",
   "footerSubscribe": "Suscribirse",
   "footerSubscribeDesc": "¿Quieres unirte a nosotros?",
   "footerPlaceholderEmail": "Correo electrónico",
-
+  "footerConnectYourPath": "Conecta tu camino",
   "footerRights": "© 2025 Moveo - Todos los derechos reservados"
 }

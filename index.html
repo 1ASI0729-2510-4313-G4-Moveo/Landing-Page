@@ -10,8 +10,7 @@
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
-    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -59,30 +58,30 @@
                                        data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
                                        aria-expanded="false" aria-label="Toggle navigation" id="navItem2">About</a>
                                     <ul class="sub-menu collapse" id="submenu-1-1">
-                                        <li class="nav-item"><a href="#aboutus">About Us</a></li>
-                                        <li class="nav-item"><a href="#team">Team</a></li>
+                                        <li class="nav-item"><a href="#aboutus" id="navSubItem21">About Us</a></li>
+                                        <li class="nav-item"><a href="#team" id="navSubItem22">Team</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#pricing" aria-label="Toggle navigation">Subscriptions</a>
+                                    <a href="#pricing" aria-label="Toggle navigation" id="navItem3">Subscriptions</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
                                        data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
-                                       aria-expanded="false" aria-label="Toggle navigation">Customers</a>
+                                       aria-expanded="false" aria-label="Toggle navigation" id="navItem4">Customers</a>
                                     <ul class="sub-menu collapse" id="submenu-1-2">
-                                        <li class="nav-item"><a href="#faq">Faq</a>
+                                        <li class="nav-item"><a href="#faq" id="navSubItem41">Faq</a>
                                         </li>
-                                        <li class="nav-item"><a href="#testimonial">Testimonials</a></li>
+                                        <li class="nav-item"><a href="#testimonial" id="navSubItem42">Testimonials</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#contact" aria-label="Toggle navigation">Contact</a>
+                                    <a href="#contact" aria-label="Toggle navigation" id="navItem5">Contact</a>
                                 </li>
                             </ul>
                         </div> <!-- navbar collapse -->
                         <div class="button home-btn">
-                            <a href="" class="btn">Log In</a>
+                            <a href="" class="btn" id="logIn">Log In</a>
                         </div>
                     </nav>
                     <!-- End Navbar -->
@@ -131,16 +130,18 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="content">
-                    <h3 class="heading wow fadeInUp" data-wow-delay=".5s"><span>About Us</span> the GPT4 team presents: <br>
+                    <h3 class="heading wow fadeInUp" data-wow-delay=".5s">
+                        <span id="aboutUsIntro">About Us</span>
+                        <div id="aboutUsTitle">the GPT4 team presents:</div>
                         MOVEO
                     </h3>
                     <!-- Start Single Feature -->
                     <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
                         <div class="f-icon">
-                            <i class="lni lni-dashboard"></i>
+                            <i class="lni lni-user-multiple-4"></i>
                         </div>
-                        <h4>Who we are?</h4>
-                        <p>
+                        <h4 id="whoWeAreTitle">Who we are?</h4>
+                        <p id="whoWeAreText">
                             MOVEO is a university startup dedicated to connecting workers who need reliable transportation with people willing to lend their vehicles safely and affordably.
                         </p>
                     </div>
@@ -148,10 +149,10 @@
                     <!-- Start Single Feature -->
                     <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
                         <div class="f-icon">
-                            <i class="lni lni-pencil-alt"></i>
+                            <i class="lni lni-pencil-1"></i>
                         </div>
-                        <h4>What is our mission?</h4>
-                        <p>
+                        <h4 id="missionTitle">What is our mission?</h4>
+                        <p id="missionText">
                             Our mission is to democratize access to vehicles through a fair and flexible lending model, promoting mobility as a right and an opportunity for thousands of workers.
                         </p>
                     </div>
@@ -159,10 +160,10 @@
                     <!-- Start Single Feature -->
                     <div class="single-feature wow fadeInUp" data-wow-delay="0.8s">
                         <div class="f-icon">
-                            <i class="lni lni-vector"></i>
+                            <i class="lni lni-vector-nodes-6"></i>
                         </div>
-                        <h4>Subscriptions</h4>
-                        <p>
+                        <h4 id="subscriptionsTitle">Subscriptions</h4>
+                        <p id="subscriptionsText">
                             At Moveo, we work with a vehicle subscription model, where users pay for the time they use the car they choose, in a flexible and affordable way.
                         </p>
                     </div>
@@ -180,9 +181,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">What we offer</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Services</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">At Moveo, we connect people who need to move with available cars near them, offering a flexible, safe, and collaborative way to rent and generate income.</p>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s" id="servicesIntro">What we offer</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s" id="servicesTitle">Our Services</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s" id="servicesDescription">At Moveo, we connect people who need to move with available cars near them, offering a flexible, safe, and collaborative way to rent and generate income.</p>
                 </div>
             </div>
         </div>
@@ -190,55 +191,55 @@
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-hospital"></i>
+                        <i class="lni lni-calendar-days"></i>
                     </div>
-                    <h4 class="text-title">📅 Custom Time Rental</h4>
-                    <p>Choose how long you need the car: hours, days, or weeks. You only pay for the time you use it.</p>
+                    <h4 class="text-title" id="service1Title">📅 Custom Time Rental</h4>
+                    <p id="service1Desc">Choose how long you need the car: hours, days, or weeks. You only pay for the time you use it.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-keyword-research"></i>
+                        <i class="lni lni-search-2"></i>
                     </div>
-                    <h4 class="text-title">🔍 Nearby Car Search</h4>
-                    <p>Find available vehicles in parking lots near your location, ready to be used.</p>
+                    <h4 class="text-title" id="service2Title">🔍 Nearby Car Search</h4>
+                    <p id="service2Desc">Find available vehicles in parking lots near your location, ready to be used.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-first-aid"></i>
+                        <i class="lni lni-map-marker-1"></i>
                     </div>
-                    <h4 class="text-title">📍 Nearby Drop-Off and Pick-Up</h4>
-                    <p>Cars are left in designated parking lots near you for added convenience.</p>
+                    <h4 class="text-title" id="service3Title">📍 Nearby Drop-Off and Pick-Up</h4>
+                    <p id="service3Desc">Cars are left in designated parking lots near you for added convenience.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-display-alt"></i>
+                        <i class="lni lni-wallet-1"></i>
                     </div>
-                    <h4 class="text-title">💸 Passive Income Generation</h4>
-                    <p>Suppliers can put their cars on the road during their chosen times and earn hassle-free.</p>
+                    <h4 class="text-title" id="service4Title">💸 Passive Income Generation</h4>
+                    <p id="service4Desc">Suppliers can put their cars on the road during their chosen times and earn hassle-free.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-skipping-rope"></i>
+                        <i class="lni lni-phone"></i>
                     </div>
-                    <h4 class="text-title">📲 App-Based Management</h4>
-                    <p>Monitor vehicle status, loan duration, payments, and more, all from a single platform.</p>
+                    <h4 class="text-title" id="service5Title">📲 App-Based Management</h4>
+                    <p id="service5Desc">Monitor vehicle status, loan duration, payments, and more, all from a single platform.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
                 <div class="single-service">
                     <div class="main-icon">
-                        <i class="lni lni-display-alt"></i>
+                        <i class="lni lni-stopwatch"></i>
                     </div>
-                    <h4 class="text-title">🕒 Availability and Recall Control</h4>
-                    <p>Car owners decide when to borrow and when to retrieve their car. Complete control at all times.</p>
+                    <h4 class="text-title" id="service6Title">🕒 Availability and Recall Control</h4>
+                    <p id="service6Desc">Car owners decide when to borrow and when to retrieve their car. Complete control at all times.</p>
                 </div>
             </div>
         </div>
@@ -252,9 +253,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">pricing</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing & Plans</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">Signing up for Moveo is completely free. You can search for nearby cars, see prices, and choose the one that best suits your time and needs.</p>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s" id="pricingIntro">pricing</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s" id="pricingTitle">Pricing & Plans</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s" id="pricingDescription">Signing up for Moveo is completely free. You can search for nearby cars, see prices, and choose the one that best suits your time and needs.</p>
                 </div>
             </div>
         </div>
@@ -264,10 +265,10 @@
                 <div class="single-table">
                     <!-- Table Head -->
                     <div class="table-head">
-                        <h4 class="title">🚗 For car renters</h4>
-                        <p class="sub-title">Free account</p>
+                        <h4 class="title" id="plan1Title">🚗 For car renters</h4>
+                        <p class="sub-title" id="plan1Desc">Free account</p>
                         <div class="price">
-                            <h2 class="amount"><span class="currency">$</span>0<span class="duration">/month</span>
+                            <h2 class="amount"><span class="currency">$</span>0<span class="duration" id="plan1Price">/month</span>
                             </h2>
                         </div>
                     </div>
@@ -276,22 +277,22 @@
                     <div class="table-content">
                         <!-- Table List -->
                         <ul class="table-list">
-                            <li>Registration and navigation</li>
-                            <li>Customized rental time</li>
-                            <li>Access to nearby cars</li>
-                            <li>Advanced reservations</li>
-                            <li class="disable">Discounts on recurring rentals</li>
-                            <li class="disable">Priority support</li>
-                            <li class="disable">Preferential access to new vehicles</li>
+                            <li id="plan1Feature1">Registration and navigation</li>
+                            <li id="plan1Feature2">Customized rental time</li>
+                            <li id="plan1Feature3">Access to nearby cars</li>
+                            <li id="plan1Feature4">Advanced reservations</li>
+                            <li id="plan1Feature5" class="disable">Discounts on recurring rentals</li>
+                            <li id="plan1Feature6" class="disable">Priority support</li>
+                            <li id="plan1Feature7" class="disable">Preferential access to new vehicles</li>
                         </ul>
                         <!-- End Table List -->
                     </div>
                     <!-- End Table Content -->
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn">Start free trial <i
+                        <a href="javascript:void(0)" class="btn"> <span id="plan1Button">Start free trial</span> <i
                                 class="lni lni-arrow-right"></i></a>
                     </div>
-                    <p class="no-card">No credit card required</p>
+                    <p class="no-card" id="noCard1">No credit card required</p>
                 </div>
                 <!-- End Single Table-->
             </div>
@@ -300,10 +301,10 @@
                 <div class="single-table middle">
                     <!-- Table Head -->
                     <div class="table-head">
-                        <h4 class="title">Premium</h4>
-                        <p class="sub-title">Powerful & Awesome Elements</p>
+                        <h4 id="plan2Title" class="title">Premium</h4>
+                        <p id="plan2Desc" class="sub-title">Powerful & Awesome Elements</p>
                         <div class="price">
-                            <h2 class="amount"><span class="currency">$</span>5<span class="duration">/month</span>
+                            <h2 class="amount"><span class="currency">$</span>5<span id="plan2Price" class="duration">/month</span>
                             </h2>
                         </div>
                     </div>
@@ -313,23 +314,23 @@
                         <!-- Table List -->
                         <ul class="table-list">
                             <ul class="table-list">
-                                <li>Registration and navigation</li>
-                                <li>Customized rental time</li>
-                                <li>Access to nearby cars</li>
-                                <li>Advanced reservations</li>
-                                <li>Discounts on recurring rentals</li>
-                                <li>Priority support</li>
-                                <li>Preferential access to new vehicles</li>
+                                <li id="plan2Feature1">Registration and navigation</li>
+                                <li id="plan2Feature2">Customized rental time</li>
+                                <li id="plan2Feature3">Access to nearby cars</li>
+                                <li id="plan2Feature4">Advanced reservations</li>
+                                <li id="plan2Feature5">Discounts on recurring rentals</li>
+                                <li id="plan2Feature6">Priority support</li>
+                                <li id="plan2Feature7">Preferential access to new vehicles</li>
                             </ul>
                         </ul>
                         <!-- End Table List -->
                     </div>
                     <!-- End Table Content -->
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn btn-alt">Start free trial <i
+                        <a href="javascript:void(0)" class="btn btn-alt"> <span id="plan2Button">Start free trial</span> <i
                                 class="lni lni-arrow-right"></i></a>
                     </div>
-                    <p class="no-card">No credit card required</p>
+                    <p class="no-card" id="noCard2">No credit card required</p>
                 </div>
                 <!-- End Single Table-->
             </div>
@@ -338,11 +339,11 @@
                 <div class="single-table">
                     <!-- Table Head -->
                     <div class="table-head">
-                        <h4 class="title">For vehicle providers</h4>
-                        <span class="popular">Most Popular</span>
-                        <p class="sub-title">Powerful & Awesome Elements</p>
+                        <h4 class="title" id="plan3Title">For vehicle providers</h4>
+                        <span class="popular" id="plan3Popular">Most Popular</span>
+                        <p class="sub-title" id="plan3Desc">Free publication of your vehicle</p>
                         <div class="price">
-                            <h2 class="amount"><span class="currency">$</span>15<span class="duration">/month</span>
+                            <h2 class="amount"><span class="currency">$</span>15<span id="plan3Price" class="duration">/month</span>
                             </h2>
                         </div>
                     </div>
@@ -351,13 +352,13 @@
                     <div class="table-content">
                         <!-- Table List -->
                         <ul class="table-list">
-                            <li><strong>🔓 No hidden fees:</strong> Publishing your vehicle on Moveo is completely free.</li>
-                            <li><strong>💰 Easy income:</strong> For every rental, you earn <strong>20%</strong> of the total paid.</li>
-                            <li><strong>🛠️ Full control from the app:</strong>
+                            <li id="plan3Feature1">No hidden fees: Publishing your vehicle on Moveo is completely free.</li>
+                            <li id="plan3Feature2">Easy income: For every rental, you earn 20% of the total paid.</li>
+                            <li> <div id="plan3Feature3">Full control from the app: </div><br/>
                                 <ul>
-                                    <li>Turn availability on or off anytime</li>
-                                    <li>Request vehicle recovery when needed</li>
-                                    <li>Track your car’s status and manage everything from your profile</li>
+                                    <li id="plan3Feature3_1">Turn availability on or off anytime</li>
+                                    <li id="plan3Feature3_2">Request vehicle recovery when needed</li>
+                                    <li id="plan3Feature3_3">Track your car’s status and manage everything from your profile</li>
                                 </ul>
                             </li>
                         </ul>
@@ -365,10 +366,10 @@
                     </div>
                     <!-- End Table Content -->
                     <div class="button">
-                        <a href="javascript:void(0)" class="btn">Start free trial <i
+                        <a href="javascript:void(0)" class="btn"><span id="plan3Button">Start free trial </span><i
                                 class="lni lni-arrow-right"></i></a>
                     </div>
-                    <p class="no-card">No credit card required</p>
+                    <p class="no-card" id="noCard3">No credit card required</p>
                 </div>
                 <!-- End Single Table-->
             </div>
@@ -384,13 +385,13 @@
             <div class="col-12">
                 <div class="inner-content-head">
                     <div class="inner-content">
-                        <img class="shape2" src="assets/video/shape2.svg" alt="#">
+                        
                         <div class="section-title">
-                            <span class="wow zoomIn" data-wow-delay=".2s">Comming Soon</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Watch Our intro video</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">This section has been placed for videos</p>
+                            <span class="wow zoomIn" data-wow-delay=".2s" id="introVideoTitle">Comming Soon</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s" id="introVideoSubtitle">Watch Our intro video</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s" id="introVideoDescription">This section has been placed for videos</p>
                         </div>
-                        <div class="intro-video-play">
+                        <div class="intro-video-play">  
                             <div class="play-thumb wow zoomIn" data-wow-delay=".2s">
                                 <a src="https://youtu.be/X3sjvwBDlXs"
                                    class="glightbox video"><i class="lni lni-play"></i></a>
@@ -410,14 +411,14 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Moveo Team</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Team</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">Presentation of our work team</p>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s" id="teamIntro">Moveo Team</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s" id="teamTitle">Meet Our Team</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s" id="teamDescription">Presentation of our work team</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".3s">
                 <!-- Start Single Team -->
                 <div class="single-team">
                     <div class="team-image">
@@ -429,13 +430,13 @@
                         </h4>
                         <ul class="social">
                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- End Single Team -->
             </div>
-            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".5s">
                 <!-- Start Single Team -->
                 <div class="single-team">
                     <div class="team-image">
@@ -447,13 +448,13 @@
                         </h4>
                         <ul class="social">
                             <li><a href="https://www.instagram.com/fer.lzcc/"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- End Single Team -->
             </div>
-            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".7s">
                 <!-- Start Single Team -->
                 <div class="single-team">
                     <div class="team-image">
@@ -465,13 +466,13 @@
                         </h4>
                         <ul class="social">
                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- End Single Team -->
             </div>
-            <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
                 <!-- Start Single Team -->
                 <div class="single-team">
                     <div class="team-image">
@@ -483,7 +484,7 @@
                         </h4>
                         <ul class="social">
                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -501,7 +502,7 @@
                         </h4>
                         <ul class="social">
                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -518,9 +519,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Customer Reviews</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Testimonials</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">Some words from our collaborators!</p>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s" id="testimonialsIntro">Customer Reviews</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s" id="testimonialsTitle">Our Testimonials</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s" id="testimonialsDescription">Some words from our collaborators!</p>
                 </div>
             </div>
         </div>
@@ -646,9 +647,9 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h3 class="wow zoomIn" data-wow-delay=".2s">Faq</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">frequently asked questions</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">Some of the most frequently asked queries.</p>
+                    <h3 class="wow zoomIn" data-wow-delay=".2s" id="faqIntro">FAQ</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s" id="faqTitle">frequently asked questions</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s" id="faqDescription">Some of the most frequently asked queries.</p>
                 </div>
             </div>
         </div>
@@ -659,14 +660,14 @@
                         <h2 class="accordion-header" id="heading1">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                <span class="title">How does Moveo work?</span><i
+                                <span id="faq1Question" class="title">How does Moveo work?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
                              data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq1Answer">
                                     Moveo connects people who need a car to get around with providers willing to lend them for a specific period and in exchange for a fair fee.
                                 </p>
                             </div>
@@ -676,14 +677,14 @@
                         <h2 class="accordion-header" id="heading2">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                <span class="title">What do I need to request a car?</span><i
+                                <span id="faq2Question" class="title">What do I need to request a car?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
                              data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq2Answer">
                                     All you need to do is register in the app, verify your identity, have a valid driver's license, and choose the vehicle that best suits your needs.
                                 </p>
                             </div>
@@ -693,14 +694,14 @@
                         <h2 class="accordion-header" id="heading3">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                <span class="title">Can I lend my car if I don't use it daily?</span><i
+                                <span id="faq3Question" class="title">Can I lend my car if I don't use it daily?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
                              data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq3Answer">
                                     Yes! You can offer your car on the days and times you prefer, set your rate, and manage everything from the app.
                                 </p>
                             </div>
@@ -714,14 +715,14 @@
                         <h2 class="accordion-header" id="heading11">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                <span class="title">Are the vehicles insured?</span><i
+                                <span id="faq6Question" class="title">Are the vehicles insured?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
                              data-bs-parent="#accordionExample2">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq6Answer">
                                     Yes, all cars on Moveo must have active insurance. Additionally, we have security policies to protect both parties.
                                 </p>
                             </div>
@@ -731,14 +732,14 @@
                         <h2 class="accordion-header" id="heading22">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
-                                <span class="title">What payment methods are accepted?</span><i
+                                <span id="faq4Question" class="title">What payment methods are accepted?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
                              data-bs-parent="#accordionExample2">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq4Answer">
                                     You can pay directly from the app with a debit or credit card, or digital wallet. The entire process is 100% secure.
                                 </p>
                             </div>
@@ -748,14 +749,14 @@
                         <h2 class="accordion-header" id="heading33">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
-                                <span class="title">What happens if an accident occurs during the loan?</span><i
+                                <span id="faq5Question" class="title">What happens if an accident occurs during the loan?</span><i
                                     class="lni lni-plus"></i>
                             </button>
                         </h2>
                         <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33"
                              data-bs-parent="#accordionExample2">
                             <div class="accordion-body">
-                                <p>
+                                <p id="faq5Answer">
                                     In the event of an incident, the assistance protocol is activated and both parties are notified. The vehicle insurance covers damages according to its terms, and Moveo provides support throughout the process.
                                 </p>
                             </div>
@@ -775,8 +776,8 @@
             <div class="col-lg-6 col-12">
                 <div class="contact-widget-wrapper">
                     <div class="main-title">
-                        <h2>Contact Us</h2>
-                        <p>
+                        <h2 id="contactTitle">Contact Us</h2>
+                        <p id="contactDescription">
                             Do you have questions, suggestions, or want to learn more about how Moveo works? <br>
                             We're here to help. <br>
                             📩 Write to us and we'll get back to you as soon as possible. <br>
@@ -784,15 +785,15 @@
                         </p>
                     </div>
                     <div class="contact-widget-block">
-                        <h3 class="title">Call us</h3>
+                        <h3 id="contactCallUs" class="title">Call us</h3>
                         <p>+51 938 397 201</p>
                     </div>
                     <div class="contact-widget-block">
-                        <h3 class="title">Email us</h3>
+                        <h3 id="contactEmailUs" class="title">Email us</h3>
                         <p>moveocontact@gmail.com</p>
                     </div>
                     <div class="contact-widget-block">
-                        <h3 class="title">Our Address</h3>
+                        <h3 id="contactAddress" class="title">Our Address</h3>
                         <p>Av. Alameda San Marcos 11</p>
                         <p>CHORRILLOS, PERÚ 15067</p>
                     </div>
@@ -800,7 +801,7 @@
             </div>
             <div class="col-lg-6 col-12">
                 <div class="contact-form">
-                    <h3 class="form-title">Leave a message here</h3>
+                    <h3 id="formTitle" class="form-title">Leave a message here</h3>
                     <form class="form" method="post" action="">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-12">
@@ -831,7 +832,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="button">
-                                    <button type="submit" class="btn ">Send Message</button>
+                                    <button id="formButton" type="submit" class="btn ">Send Message</button>
                                 </div>
                             </div>
                         </div>
@@ -875,12 +876,12 @@
                                     <img src="assets/images/logo/moveo_icon_white.svg" alt="#">
                                 </a>
                             </div>
-                            <p>Connect your path</p>
-                            <h4 class="social-title">Follow Us On:</h4>
+                            <p id="footerConnectYourPath">Connect your path</p>
+                            <h4 id="footerFollowUsOn" class="social-title">Follow Us On:</h4>
                             <ul class="social">
-                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook"></i></a></li>
                                 <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-x"></i></a></li>
                                 <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
                             </ul>
                         </div>
@@ -889,12 +890,12 @@
                     <div class="col-lg-2 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer f-link">
-                            <h3>Solutions</h3>
+                            <h3 id="footerSolutions">Solutions</h3>
                             <ul>
-                                <li><a href="javascript:void(0)">Marketing</a></li>
-                                <li><a href="javascript:void(0)">Analytics</a></li>
-                                <li><a href="javascript:void(0)">Commerce</a></li>
-                                <li><a href="javascript:void(0)">Insights</a></li>
+                                <li><a id="footerSolutionsItem1" href="javascript:void(0)">Marketing</a></li>
+                                <li><a id="footerSolutionsItem2" href="javascript:void(0)">Analytics</a></li>
+                                <li><a id="footerSolutionsItem3" href="javascript:void(0)">Commerce</a></li>
+                                <li><a id="footerSolutionsItem4" href="javascript:void(0)">Insights</a></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -902,12 +903,12 @@
                     <div class="col-lg-2 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer f-link">
-                            <h3>Support</h3>
+                            <h3 id="footerSupport">Support</h3>
                             <ul>
-                                <li><a href="javascript:void(0)">Pricing</a></li>
-                                <li><a href="javascript:void(0)">Documentation</a></li>
-                                <li><a href="javascript:void(0)">Guides</a></li>
-                                <li><a href="javascript:void(0)">API Status</a></li>
+                                <li><a id="footerSupportItem1" href="javascript:void(0)">Pricing</a></li>
+                                <li><a id="footerSupportItem2" href="javascript:void(0)">Documentation</a></li>
+                                <li><a id="footerSupportItem3" href="javascript:void(0)">Guides</a></li>
+                                <li><a id="footerSupportItem4" href="javascript:void(0)">API Status</a></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -915,12 +916,12 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <!-- Single Widget -->
                         <div class="single-footer newsletter">
-                            <h3>Subscribe</h3>
-                            <p>Do you want to join us?</p>
+                            <h3 id="footerSubscribe">Subscribe</h3>
+                            <p id="footerSubscribeDesc">Do you want to join us?</p>
                             <form action="#" method="get" target="_blank" class="newsletter-form">
                                 <input name="EMAIL" placeholder="Email address" required="required" type="email">
                                 <div class="button">
-                                    <button class="sub-btn"><i class="lni lni-envelope"></i>
+                                    <button class="sub-btn"><i class="lni lni-envelope-1"></i>
                                     </button>
                                 </div>
                             </form>
@@ -938,7 +939,7 @@
             <div class="inner-content">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-12">
-                        <p class="copyright-text">© 2025 Moveo - All Rights Reserved</p>
+                        <p id="footerRights" class="copyright-text">© 2025 Moveo - All Rights Reserved</p>
                     </div>
                 </div>
             </div>
