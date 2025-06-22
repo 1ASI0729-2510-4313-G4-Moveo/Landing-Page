@@ -18,7 +18,7 @@ Index Of css
 
 /* Estilo para reducir el tamaño de las imágenes del carrusel */
 #app-carousel .carousel-inner img {
-    max-width: 50%; /* Ajusta el porcentaje según el tamaño deseado */
+    max-width: 70%; /* Ajusta el porcentaje según el tamaño deseado */
     height: auto;
     margin: 0 auto;
 }
