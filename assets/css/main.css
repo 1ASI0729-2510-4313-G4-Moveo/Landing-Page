@@ -3775,3 +3775,25 @@ ol {
     background: #e9f5f8;
     color: #007c91;
 }
+
+.video-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.play-thumb i {
+    color: #00c6ad;
+    transition: transform 0.3s;
+}
+
+.play-thumb i:hover {
+    transform: scale(1.2);
+}
