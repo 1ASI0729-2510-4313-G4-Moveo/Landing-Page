@@ -437,17 +437,46 @@
             <div class="col-12">
                 <div class="inner-content-head">
                     <div class="inner-content">
-                        <div class="section-title">
-                            <span class="wow zoomIn" data-wow-delay=".2s" id="introVideoTitle">Video</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s" id="introVideoSubtitle">About The Team</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s" id="introVideoDescription">This section has been placed for About the Team Video</p>
+
+                        <!-- Título general -->
+                        <div class="section-title text-center">
+                            <span class="wow zoomIn" data-wow-delay=".2s">Moveo Product</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Watch Our Product Videos</h2>
                         </div>
-                        <div class="intro-video-play">
-                            <div class="play-thumb wow zoomIn" data-wow-delay=".2s">
-                                <a src=""
-                                   class="glightbox video"><i class="lni lni-play"></i></a>
+
+                        <!-- Videos -->
+                        <div class="row justify-content-center">
+
+                            <!-- Video 1 -->
+                            <div class="col-md-6 text-center mb-4">
+                                <div class="intro-video-play">
+                                    <div class="video-block">
+                                        <div class="video-title">About The Product</div>
+                                        <p>Moveo aims to provide a modern digital solution for the peer-to-peer car rental industry in Peru.</p>
+                                        <a href="https://www.youtube.com/watch?v=KWXhfRw9ePE"
+                                           class="glightbox play-thumb" data-type="video">
+                                            <i class="lni lni-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+
+                            <!-- Video 2 -->
+                            <div class="col-md-6 text-center mb-4">
+                                <div class="intro-video-play">
+                                    <div class="video-block">
+                                        <div class="video-title">About The Team</div>
+                                        <p>We are a passionate team committed to redefining car rentals in Peru through technology and innovation.</p>
+                                        <a href="https://www.youtube.com/watch?v=X3sjvwBDlXs"
+                                           class="glightbox play-thumb" data-type="video">
+                                            <i class="lni lni-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- End row -->
+
                     </div>
                 </div>
             </div>
@@ -550,6 +579,24 @@
                     <div class="content">
                         <h4>Anghel Trillo
                             <span>Estudiante de la carrera de Ingenieria de Software de la Universidad Peruana de Ciencias Aplicadas (UPC) cursando el 5to ciclo, lo que me gusta de la carrera es desarrollar soluciones innovadoras que contribuyen a la sociedad.</span>
+                        </h4>
+                        <ul class="social">
+                            <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
+                <!-- Start Single Team -->
+                <div class="single-team">
+                    <div class="team-image">
+                        <img src="assets/images/team/Ramos.png" alt="#">
+                    </div>
+                    <div class="content">
+                        <h4>Karen Ramos
+                            <span>Desarrollador entusiasta de resolución de problemas de .NET con experiencia en C#, JavaScript, TypeScript, Golang, C++, HTML, CSS. Además de .NET, .Net Core, Angular, React y Kendo UI. Trabaja bien tanto individualmente como en un ambiente de equipo. Como profesional de TI, me dedico a administrar mis proyectos hasta su finalización, asegurándome de que se completen en el plazo establecido.</span>
                         </h4>
                         <ul class="social">
                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
@@ -1056,13 +1103,9 @@
     });
     cu.start();
 
-    //========= glightbox
-    GLightbox({
-        'href': '',
-        'type': 'video',
-        'source': 'youtube', //video, YouTube or local
-        'width': 900,
-        'autoplayVideos': true,
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        autoplayVideos: true
     });
 
 </script>
